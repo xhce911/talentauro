@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {Grid,  Link} from '@nextui-org/react';
 import logo from "../assets/logo.png"
 import '../css/Header.css';
-import {FaBullhorn, FaWhmcs} from 'react-icons/fa';
+import { FaWhmcs} from 'react-icons/fa';
 import {HiMenu} from 'react-icons/hi';
 
 class HeaderApp extends Component{
