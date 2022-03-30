@@ -30,7 +30,7 @@ const ChallengeCard = (props) => (
                 </Row>
                 <Row>
                   <div>
-                    <Text b>Saludos</Text>
+                    <Text b>¡Saludo!s</Text>
                     <Text>{props.description}</Text>
                   </div>
                 </Row>
