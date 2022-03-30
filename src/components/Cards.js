@@ -1,10 +1,10 @@
 import { EffectCards } from "swiper";
 import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
+import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import ChallengeCard from "./challengeCard";
-import "swiper/swiper-bundle.min.css";
+import "../css/swiper.min.css";
 import "../css/styles.css";
 import challenges from '../challenges.json'
 
