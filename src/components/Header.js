@@ -15,7 +15,7 @@ class HeaderApp extends Component{
                             <Link href="#" className="menu-btn" color="error"><HiMenu size={30}/></Link>
                         </Grid>
                         <Grid xs={8} justify="center" alignContent="center" direction="row" css={{mr:"2rem"}}>
-                            <img src={logo} className="logo" alt="logo" />
+                            <img src={logo} className="logo" alt="logotipo" />
                         </Grid>
                         <Grid xs={2} css={{mx:"2rem", my:"2rem"}}  >
                             <Link color="warning"><FaWhmcs size={30}/></Link>
