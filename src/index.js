@@ -1,13 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { NextUIProvider } from '@nextui-org/react';
+import FooterApp from './components/FooterApp';
+import HeaderApp from './components/Header';
+
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <NextUIProvider>
+      <React.StrictMode>
+        <HeaderApp />
+          <Routes>
+            <Route path='/' element={<App />} />
+          </Routes>
+        <FooterApp/>
+      </React.StrictMode>
+    </NextUIProvider>
+  </BrowserRouter>
+,
   document.getElementById('root')
 );
 
