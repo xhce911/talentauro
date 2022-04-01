@@ -7,7 +7,7 @@ class ActionBtn extends Component {
     render(){
         return(
             <>
-             <Grid.Container  justify="center"  css={{pt:"0rem"}}> 
+             <Grid.Container  justify="center"  css={{pt:"2rem"}}> 
                  <Grid sm={0}>
                     <Button  auto responsive="true" color="error" rounded="true" css={{w:"80px", h:"80px",mx:"2rem"}}  icon={<FaTimes  size={30} />}></Button>
                  </Grid>

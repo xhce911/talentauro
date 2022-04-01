@@ -6,7 +6,7 @@ import {FaAward, FaClock, FaUserShield } from 'react-icons/fa';
 
 const ChallengeCard = (props) => (
           <>
-          <Card  css={{width:"300px", height:"380px", borderRadius:"18px", mb:"1rem"}}>
+          <Card  css={{width:"300px", height:"39xt0px", borderRadius:"18px", mb:"1rem"}}>
               <Card.Header css={{bg:"#B90504",  height:"70px", pt:"1rem", px:"1.5rem"}} >
                 <Row>
                   <Col xs={10}>
