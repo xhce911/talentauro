@@ -1,6 +1,16 @@
 .App {
   text-align: center;
+  
 }
+
+.header{
+  z-index: 2;
+}
+
+.content{
+  z-index: 0;
+}
+
 
 
 @media(min-width: 800px){

@@ -1,9 +1,37 @@
-.mennu-btn  { 
-    text-decoration: none;
-} 
+
 
 .logo{
     margin-top: 1.5rem;
     max-width: 100%;
     height: 35%;
 }
+
+
+.off{
+    display: none;
+}
+
+.on{
+    background-color: "#AF1A18";
+    display: block;
+
+}
+
+.close-btn{
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    
+    
+}
+
+.sidelogo{
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 80px;
+}
+
+.side-icon{
+    margin-right: 1rem;
+}
+

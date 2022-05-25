@@ -16,6 +16,7 @@ function Cards() {
         grabCursor={true}
         modules={[EffectCards]}
         className="mySwiper"
+        
       >
         {challenges.map((challenge, index)=>(
           <SwiperSlide>
@@ -25,7 +26,8 @@ function Cards() {
               title={challenge.title}
               company={challenge.company}
               location={challenge.location}
-              description={challenge.description}            
+              description={challenge.description} 
+              color={challenge.background}           
             />
           </SwiperSlide>
         ))}  

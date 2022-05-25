@@ -1,8 +1,10 @@
 [
     {
+        
         "id":"0000",
+        "background":"error",
         "title":"Reto1",
-        "company":"Bar de Moe",
+        "company":"Telmex",
         "location":"Springfield, USA",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ultricies ipsum. Suspendisse sodales dignissim nunc, ut aliquam arcu tempor at. Phasellus eu mattis nulla. Fusce ultricies tempus sem ut consectetur. ",
         "tag": "Alcoholicos"
@@ -10,9 +12,11 @@
     },
 
     {
+        
         "id":"0001",
+        "background":"primary",
         "title":"Reto2",
-        "company":"Planta Nuclear",
+        "company":"CEMEX",
         "location":"Shellbibyl, USA",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ultricies ipsum. Suspendisse sodales dignissim nunc, ut aliquam arcu tempor at. Phasellus eu mattis nulla. Fusce ultricies tempus sem ut consectetur. ",
         "tag": "Atomico"
@@ -20,9 +24,11 @@
     },
 
     {
+        
         "id":"0002",
+        "background":"#FB5607",
         "title":"Reto3",
-        "company":"Escuela Primaria",
+        "company":"Coca-Cola",
         "location":"Springfield, USA",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ultricies ipsum. Suspendisse sodales dignissim nunc, ut aliquam arcu tempor at. Phasellus eu mattis nulla. Fusce ultricies tempus sem ut consectetur. ",
         "tag": "Tecnologias"
@@ -30,9 +36,11 @@
     },
 
     {
+        
         "id":"0003",
+        "background":"#8338EC",
         "title":"Reto4",
-        "company":"Tienda de historietas",
+        "company":"Cinepolis",
         "location":"Springfield, USA",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ultricies ipsum. Suspendisse sodales dignissim nunc, ut aliquam arcu tempor at. Phasellus eu mattis nulla. Fusce ultricies tempus sem ut consectetur. ",
         "tag": "Tecnologias nerd"

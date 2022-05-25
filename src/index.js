@@ -1,30 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import { NextUIProvider } from '@nextui-org/react';
-import FooterApp from './components/FooterApp';
-import HeaderApp from './components/Header';
+
 
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
-
+import Dashboard from './routes/Client/dashboard';
+import Register from './routes/Client/register';
+import Profile from './routes/Client/profile';
+import Challenges from './routes/Client/challenges';
 
 
 ReactDOM.render(
   <BrowserRouter>
     <NextUIProvider>
       <React.StrictMode>
-        <HeaderApp />
           <Routes>
-            <Route path='/' element={<App />} />
+            <Route path='/' element={<Dashboard />} />
+            <Route path='dashboard' element={<Dashboard />} />
+            <Route path='register' element={<Register />} />
+            <Route path='profile' element={<Profile />} />
+            <Route path='/challenges' element={<Challenges />} />
+
           </Routes>
-        <FooterApp/>
       </React.StrictMode>
     </NextUIProvider>
   </BrowserRouter>
@@ -32,7 +35,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+

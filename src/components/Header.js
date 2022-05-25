@@ -1,30 +1,87 @@
 import React, {Component} from "react";
-import {Grid,  Link} from '@nextui-org/react';
+import {Sidebar, InputItem, DropdownItem, Icon, Item, Logo, LogoText} from 'react-sidebar-ui'
+import {Button, Grid, Row} from '@nextui-org/react';
 import logo from "../assets/logo.png"
+import talent from "../assets/profile.png"
 import '../css/Header.css';
-import { FaWhmcs} from 'react-icons/fa';
+import { FaRegBell, FaBriefcase, FaTimes, FaInfoCircle, FaSitemap, FaQuestionCircle, FaRssSquare, FaBook } from 'react-icons/fa';
 import {HiMenu} from 'react-icons/hi';
 
+
+
+
+
 class HeaderApp extends Component{
+    constructor(props){
+        super(props);
+        this.state={isSidenavOn: false}
+        this.sideBar = this.sideBar.bind(this);
+
+    }
+    
+    sideBar(){
+        this.setState(prevState=>({
+            isSidenavOn: !prevState.isSidenavOn
+        }))
+        console.log(this.state.isSidenavOn)
+    }
+
     render(){
         return(
             <> 
-                 <Grid.Container sm={0} css={{top:0, position: "fixed" }} >
+                 <Grid.Container sm={0} css={{top:0, position: "fixed", zIndex:2}} >
                     <Grid xs={12} >
-                        <Grid xs={2} css={{m:"2rem"}} >
-                            <Link href="#" className="menu-btn" color="error"><HiMenu size={30}/></Link>
+                        <Grid xs={2} css={{m:"1.5rem"}} >
+                            <HiMenu size={30}  onClick={this.sideBar}/>
                         </Grid>
-                        <Grid xs={8} justify="center" alignContent="center" direction="row" css={{mr:"2rem"}}>
+                        <Grid xs={8} justify="center" alignContent="center" direction="row" css={{mx:"1rem"}}>
                             <img src={logo} className="logo" alt="logotipo" />
                         </Grid>
-                        <Grid xs={2} css={{mx:"2rem", my:"2rem"}}  >
-                            <Link color="warning"><FaWhmcs size={30}/></Link>
+                        <Grid xs={2} css={{m:"1.5rem"}}  >
+                            <FaRegBell size={30}/>
                         </Grid>
+                    </Grid>
+                    <Grid xs={12} sm={0} >
+                        <Sidebar bgColor='light' classes={this.state.isSidenavOn ? "on":"off"} isCollapsed={this.state.isSidenavOn ? false: true}>
+                            <Row justify="flex-end">
+                                <FaTimes  size={25}  onClick={this.sideBar} className='close-btn'/>
+                            </Row>
+                           
+                            <Logo
+                                image={talent}
+                                imageName='react logo'
+                                classes="sidelogo"
+                                /> 
+                            
+                            <DropdownItem
+                            values={['Equipo', 'Productos', 'Contacto']}
+                            bgColor={'light'}>
+                            Talentauro
+                            </DropdownItem>
+                            <Item bgColor='light'>
+                            <FaInfoCircle  className="side-icon"/>
+                                Acerca
+                            </Item>
+                            <Item bgColor='light'>
+                            <FaBriefcase  className="side-icon"/>
+                                Empresas
+                            </Item>
+                            <Item bgColor='light'>
+                            <FaRssSquare  className="side-icon"/>
+                                 Blog
+                            </Item>
+                            <Item bgColor='light'>
+                            <FaQuestionCircle  className="side-icon"/>
+                                Ayuda
+                            </Item>
+                            
+                        </Sidebar>
                     </Grid>
                 </Grid.Container>
             </>
         )
     }
 }
+
 
 export default HeaderApp;
