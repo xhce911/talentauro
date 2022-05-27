@@ -4,7 +4,7 @@ import {Button, Grid, Row} from '@nextui-org/react';
 import logo from "../assets/logo.png"
 import talent from "../assets/profile.png"
 import '../css/Header.css';
-import { FaRegBell, FaBriefcase, FaTimes, FaInfoCircle, FaSitemap, FaQuestionCircle, FaRssSquare, FaBook } from 'react-icons/fa';
+import { FaRegBell, FaBriefcase, FaTimes, FaInfoCircle, FaSitemap, FaQuestionCircle, FaRssSquare, FaArrowLeft } from 'react-icons/fa';
 import {HiMenu} from 'react-icons/hi';
 
 
@@ -16,7 +16,6 @@ class HeaderApp extends Component{
         super(props);
         this.state={isSidenavOn: false}
         this.sideBar = this.sideBar.bind(this);
-
     }
     
     sideBar(){
@@ -24,6 +23,7 @@ class HeaderApp extends Component{
             isSidenavOn: !prevState.isSidenavOn
         }))
         console.log(this.state.isSidenavOn)
+        
     }
 
     render(){
@@ -32,19 +32,19 @@ class HeaderApp extends Component{
                  <Grid.Container sm={0} css={{top:0, position: "fixed", zIndex:2}} >
                     <Grid xs={12} >
                         <Grid xs={2} css={{m:"1.5rem"}} >
-                            <HiMenu size={30}  onClick={this.sideBar}/>
+                            <HiMenu size={30}  onClick={this.sideBar} color="#AF1A18" />
                         </Grid>
                         <Grid xs={8} justify="center" alignContent="center" direction="row" css={{mx:"1rem"}}>
                             <img src={logo} className="logo" alt="logotipo" />
                         </Grid>
                         <Grid xs={2} css={{m:"1.5rem"}}  >
-                            <FaRegBell size={30}/>
+                            <FaRegBell size={30} color="#AF1A18"/>
                         </Grid>
                     </Grid>
-                    <Grid xs={12} sm={0} >
-                        <Sidebar bgColor='light' classes={this.state.isSidenavOn ? "on":"off"} isCollapsed={this.state.isSidenavOn ? false: true}>
+                    <Grid xs={12} sm={0}>
+                        <Sidebar bgColor='light' classes={this.state.isSidenavOn ? "on":"off" } isCollapsed={this.state.isSidenavOn ? false: true}>
                             <Row justify="flex-end">
-                                <FaTimes  size={25}  onClick={this.sideBar} className='close-btn'/>
+                                <FaTimes  size={25}  onClick={this.sideBar} className='close-btn' color="#AF1A18" />
                             </Row>
                            
                             <Logo
@@ -54,24 +54,26 @@ class HeaderApp extends Component{
                                 /> 
                             
                             <DropdownItem
-                            values={['Equipo', 'Productos', 'Contacto']}
-                            bgColor={'light'}>
-                            Talentauro
+                                classes="nav-list"
+                                values={['Equipo', 'Productos', 'Contacto']}
+                                bgColor={'light'}>
+                                    
+                                Talentauro
                             </DropdownItem>
                             <Item bgColor='light'>
-                            <FaInfoCircle  className="side-icon"/>
+                            <FaInfoCircle  className="side-icon" color="#AF1A18"/>
                                 Acerca
                             </Item>
                             <Item bgColor='light'>
-                            <FaBriefcase  className="side-icon"/>
+                            <FaBriefcase  className="side-icon" color="#AF1A18"/>
                                 Empresas
                             </Item>
                             <Item bgColor='light'>
-                            <FaRssSquare  className="side-icon"/>
+                            <FaRssSquare  className="side-icon" color="#AF1A18"/>
                                  Blog
                             </Item>
                             <Item bgColor='light'>
-                            <FaQuestionCircle  className="side-icon"/>
+                            <FaQuestionCircle  className="side-icon" color="#AF1A18"/>
                                 Ayuda
                             </Item>
                             

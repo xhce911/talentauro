@@ -12,7 +12,7 @@ class register extends Component {
         super(props);
         this.state ={isLogginOn: false, isRegisterOn: true}
         this.logForm = this.logForm.bind(this);
-        this.regForm =this.regForm.bind(this);
+        this.regForm = this.regForm.bind(this);
 
     }
 

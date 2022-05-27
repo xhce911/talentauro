@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import {Grid, Text, Avatar, Card, Link, Button} from '@nextui-org/react'
+import {Grid, Text, Avatar, Card, Link, Button, Spacer} from '@nextui-org/react'
 import FooterApp from '../../components/FooterApp';
 import HeaderApp from '../../components/Header';
-
+import talent from "../../assets/profile.png"
 
 
 class profile extends Component {
@@ -12,28 +12,30 @@ class profile extends Component {
             <HeaderApp/>
             <Grid.Container >
                 <Card css={{mt:"6rem", mx:"1rem", zIndex: 0}} >
-                   <Grid xs={12}  justify='center'>
-                       
+                   <Grid xs={12}  justify='center' css={{py:"1rem"}}>
+                   
                    <Avatar
-                        src='https://actualidadjoven.es/wp-content/uploads/2016/10/simp1.jpg'
-                        css={{size:"100px"}}>
+                        src={talent}
+                        css={{size:"90px"}}>
 
                     </Avatar>
+                    
                    </Grid>
-                   <Grid xs={12} justify="center" css={{mt: "$5"}}>
-                         <Text h5 weight='bold'>Homero Simpson</Text>                         
+                   <Grid xs={12} justify="center" css={{mt: "$2"}}>
+                         <Text h4 weight='bold'>Nombre de Usuario</Text>                         
                    </Grid>
                    <Grid xs={12} justify="center">
-                         <Text>Jefe de seguridad</Text>                         
+                         <Text>Puesto Actual</Text>                         
                    </Grid>
-                   <Grid xs={12} justify="center" >
-                        <Text css={{pt:"$4"}} size={14}>📍 Springfield, USA</Text>                       
+                   <Grid xs={12} justify="center">
+                         <Text size={12} weight="light">750 puntos</Text>                         
                    </Grid>
-                   <Grid xs={12} justify="center" css={{my:"2rem"}}>
+                  
+                   <Grid xs={12} justify="center" css={{my:"1rem"}}>
                        <Button.Group light >
-                           <Button>Acerca</Button>
                            <Button>Resumen</Button>
-                           <Button>NetworK</Button>
+                           <Button>Historial</Button>
+                           <Button>Habilidades</Button>
                        </Button.Group>
                    </Grid>
                    <Grid xa={12}>

@@ -1,0 +1,35 @@
+<Grid.Container xs={8}  className="sideBar" sm={0} justify="flex-start">
+<Row css={{m:"1rem"}} justify="flex-end">
+    <FaTimes  size={20} />
+</Row>
+<Row css={{m:'.5rem'}} justify="center">
+    <Avatar
+        src={talent} 
+        objectFit="cover"
+        size={'xl'}
+        circle
+        /> 
+    </Row>
+<Col xs={12} css={{m:"2rem"}}>
+    <Grid xs={12} >
+    < FaInfoCircle className="side-icon"/>
+       <Link css={{mb:"1rem"}}> Acerca </Link>
+    </Grid>
+
+    <Grid xs={12} >
+    < FaBriefcase className="side-icon"/>
+        <Link css={{mb:"1rem"}}> Empresas </Link>
+    </Grid>
+
+    <Grid xs={12} >
+    < FaRssSquare className="side-icon"/>
+         <Link css={{mb:"1rem"}}> Newsletter </Link>
+    </Grid>
+
+    <Grid xs={12} >
+    < FaUserCircle className="side-icon"/>
+        <Link css={{mb:"1rem"}}> Contacto </Link>
+    </Grid>
+</Col>
+
+</Grid.Container>
