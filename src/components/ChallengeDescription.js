@@ -12,7 +12,7 @@ class ChallengeDescription extends Component {
             <Grid.Container sm={0} xs={12} >
                 <Row >
                     <Col xs={1} css={{pt:"1rem", pl:"1rem"}}>
-                      <Link to="/dashboard"><FaArrowLeft size={25} /></Link>
+                      <Link to="/dashboard" color='primary' ><FaArrowLeft size={25} color='primary'/></Link>
                     </Col>
                     <Col xs={10} justify="center" css={{ta:'center'}}>
                         

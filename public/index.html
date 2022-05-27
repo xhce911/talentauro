@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="Talentauro"
@@ -27,6 +27,22 @@
     -->
     <title>Talentauro</title>
   </head>
+    <script>
+      document.body.addEventListener('touchmove', function(event) {
+        event.preventDefault();
+      }, {
+        passive: false,
+        useCapture: false
+      });
+
+      window.onresize = function() {
+        $(document.body).width(window.innerWidth).height(window.innerHeight);
+      }
+
+      $(function() {
+        window.onresize();
+      });
+    </script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

@@ -31,7 +31,7 @@ function Descriptions(props) {
                             <Link
                             target="_blank"
                             css={{ color: 'primary' }}
-                            href="https://github.com/nextui-org/nextui"
+                            href="#"
                             >
                             #categoria
                             </Link>
@@ -50,7 +50,7 @@ function Descriptions(props) {
                             <Link
                             target="_blank"
                             css={{ color: 'primary' }}
-                            href="https://github.com/nextui-org/nextui"
+                            href="#"
                             >
                             #notas citas etc...
                             </Link>
@@ -69,7 +69,7 @@ function Descriptions(props) {
                             <Link
                             target="_blank"
                             css={{ color: 'primary' }}
-                            href="https://github.com/nextui-org/nextui"
+                            href="#"
                             >
                             #ligas a temas
                             </Link>
@@ -88,7 +88,7 @@ function Descriptions(props) {
                             <Link
                             target="_blank"
                             css={{ color: 'primary' }}
-                            href="https://github.com/nextui-org/nextui"
+                            href="#"
                             >
                             #categoria
                             </Link>

@@ -6,9 +6,9 @@ import { NextUIProvider, createTheme } from '@nextui-org/react';
 
 
 import {
-  BrowserRouter,
   Routes,
-  Route
+  Route,
+  HashRouter
 } from "react-router-dom";
 import Dashboard from './routes/Client/dashboard';
 import Register from './routes/Client/register';
@@ -38,7 +38,8 @@ const talentauro = createTheme({
       // you can also create your own color
       myColor: '#ff4ecd',
       white:'$white',
-      secondary:'#E7E7E7'
+      secondary:'#FFFFFF'
+
       // ...  more colors
     },
     space: {},
@@ -47,7 +48,7 @@ const talentauro = createTheme({
 })
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <NextUIProvider theme={talentauro}>
       <React.StrictMode>
           <Routes>
@@ -61,7 +62,7 @@ ReactDOM.render(
           </Routes>
       </React.StrictMode>
     </NextUIProvider>
-  </BrowserRouter>
+  </HashRouter>
 ,
   document.getElementById('root')
 );

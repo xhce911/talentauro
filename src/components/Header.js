@@ -30,15 +30,15 @@ class HeaderApp extends Component{
     render(){
         return(
             <> 
-                 <Grid.Container sm={0} css={{top:0, position: "fixed", zIndex:2}} >
+                 <Grid.Container sm={0} css={{top:0, position: "fixed", zIndex:2,  bgBlur:'#ffffff'}} >
                     <Grid xs={12} >
-                        <Grid xs={2} css={{m:"1rem"}} >
+                        <Grid xs={2} css={{mx:"1rem", mt:"1.5rem"}} >
                             <HiMenu size={25}  onClick={this.sideBar} color="#AF1A18" />
                         </Grid>
                         <Grid xs={8} justify="center" alignContent="center" direction="row" css={{mx:"1rem"}}>
                             <img src={logo} className="logo" alt="logotipo" />
                         </Grid>
-                        <Grid xs={2} css={{m:"1rem"}}  >
+                        <Grid xs={2} css={{mx:"1rem", mt:"1.5rem"}}  >
                            <Link to='/register'> <FaRegBell size={25} color="#AF1A18"/></Link>
                         </Grid>
                     </Grid>

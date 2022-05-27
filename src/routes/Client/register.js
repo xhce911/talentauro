@@ -53,10 +53,10 @@ class register extends Component {
                     <Card justify="center"  >
                         <Grid xs={12}>
                             <Grid xs={6}  justify="center"  >
-                                <Button light auto onClick={this.regForm} >Registrarme</Button>
+                                <Button light auto onClick={this.regForm} color={this.state.isRegisterOn ? 'primary':'default'} css={{fontWeight:'$semibold'}}>Registrarme</Button>
                             </Grid>
                             <Grid xs={6}  justify="center">
-                                <Button light auto onClick={this.logForm} >Iniciar sesión</Button>
+                                <Button light auto onClick={this.logForm}  color={this.state.isLogginOn ? 'primary':'default'}  css={{fontWeight:'$semibold'}}>Iniciar sesión</Button>
                             </Grid>
                         </Grid>
                        <Grid.Container css={{mt:'$10'}}  xs={12} className={this.state.isLogginOn ? "active" : "unactive"} >
