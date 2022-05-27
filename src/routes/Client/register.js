@@ -39,7 +39,7 @@ class register extends Component {
             
              <Grid justify="center" sm={0} >
                 <Grid css={{my: '$10'}}>
-                    <Button  css={{ m: '1.2rem' }} auto icon={<HiMenu size={30} />} light />
+                    <Button  css={{ m: '1rem' }} auto icon={<HiMenu size={30} />} light />
                 </Grid>
                 <Grid justify='center' css={{pb:'2rem'}}>
                     <Image 

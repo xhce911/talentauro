@@ -12,10 +12,10 @@ class FooterApp extends Component{
                     <Grid  sm={0}  >
                         <Row justify="center" align="center">
                             <Button.Group size='xl' light rounded>
-                                <Link to="/dashboard"><Button icon={<FaHome size={25}   />} ></Button></Link>
-                               <Link to="/challenges" ><Button icon={<FaList  size={25}     />} ></Button></Link>
-                                <Button icon={<FaQrcode size={25}      />} ></Button>
-                               <Link to="/profile"><Button icon={<FaUserAlt size={25}  />} ></Button></Link>
+                                <Link to="/dashboard"><Button icon={<FaHome size={20}   />} ></Button></Link>
+                               <Link to="/challenges" ><Button icon={<FaList  size={20}     />} ></Button></Link>
+                                <Button icon={<FaQrcode size={20}      />} ></Button>
+                               <Link to="/profile"><Button icon={<FaUserAlt size={20}  />} ></Button></Link>
                             </Button.Group>
                         </Row>
                     </Grid>

@@ -32,20 +32,20 @@ class HeaderApp extends Component{
             <> 
                  <Grid.Container sm={0} css={{top:0, position: "fixed", zIndex:2}} >
                     <Grid xs={12} >
-                        <Grid xs={2} css={{m:"1.5rem"}} >
-                            <HiMenu size={30}  onClick={this.sideBar} color="#AF1A18" />
+                        <Grid xs={2} css={{m:"1rem"}} >
+                            <HiMenu size={25}  onClick={this.sideBar} color="#AF1A18" />
                         </Grid>
                         <Grid xs={8} justify="center" alignContent="center" direction="row" css={{mx:"1rem"}}>
                             <img src={logo} className="logo" alt="logotipo" />
                         </Grid>
-                        <Grid xs={2} css={{m:"1.5rem"}}  >
-                           <Link to='/register'> <FaRegBell size={30} color="#AF1A18"/></Link>
+                        <Grid xs={2} css={{m:"1rem"}}  >
+                           <Link to='/register'> <FaRegBell size={25} color="#AF1A18"/></Link>
                         </Grid>
                     </Grid>
-                    <Grid xs={12} sm={0}>
+                    <Grid xs={12} sm={0} className={this.state.isSidenavOn ? 'modalSlide-on':'modalSide-off'}>
                         <Sidebar bgColor='light' classes={this.state.isSidenavOn ? "on":"off" } isCollapsed={this.state.isSidenavOn ? false: true}>
                             <Row justify="flex-end">
-                                <FaTimes  size={25}  onClick={this.sideBar} className='close-btn' color="#AF1A18" />
+                                <FaTimes  size={20}  onClick={this.sideBar} className='close-btn' color="#AF1A18" />
                             </Row>
                            
                             <Logo
