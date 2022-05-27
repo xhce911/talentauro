@@ -1,6 +1,8 @@
 .swiper-2 {
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding-bottom: 2rem;
   }
   
   .swiper-slide-2 {

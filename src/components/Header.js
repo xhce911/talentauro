@@ -6,6 +6,7 @@ import talent from "../assets/profile.png"
 import '../css/Header.css';
 import { FaRegBell, FaBriefcase, FaTimes, FaInfoCircle, FaSitemap, FaQuestionCircle, FaRssSquare, FaArrowLeft } from 'react-icons/fa';
 import {HiMenu} from 'react-icons/hi';
+import { Link } from "react-router-dom";
 
 
 
@@ -38,7 +39,7 @@ class HeaderApp extends Component{
                             <img src={logo} className="logo" alt="logotipo" />
                         </Grid>
                         <Grid xs={2} css={{m:"1.5rem"}}  >
-                            <FaRegBell size={30} color="#AF1A18"/>
+                           <Link to='/register'> <FaRegBell size={30} color="#AF1A18"/></Link>
                         </Grid>
                     </Grid>
                     <Grid xs={12} sm={0}>

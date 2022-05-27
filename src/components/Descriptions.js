@@ -20,7 +20,7 @@ function Descriptions(props) {
             className="swiper-2"
         >
             <SwiperSlide className='swiper-slide-2'> 
-                <Card css={{ mw: "100%", m:"2rem", h:"350px"}} color='white'>
+                <Card css={{ mw: "100%", m:"1.5rem", h:"320px"}} color='white'>
                         <Text h4 color="primary" weight={'bold'} css={{p:".5rem"}}>
                             Instrucciones
                         </Text>
@@ -39,7 +39,7 @@ function Descriptions(props) {
                 </Card>
             </SwiperSlide>
             <SwiperSlide className='swiper-slide-2'>
-            <Card css={{ mw: "100%", m:"2rem", h:"350px"}} color='white'>
+            <Card css={{ mw: "100%", m:"1.5rem", h:"320px"}} color='white'>
                         <Text h4 color="primary" weight={'bold'} css={{p:".5rem"}}>
                             Fases del reto 
                         </Text>
@@ -58,7 +58,7 @@ function Descriptions(props) {
                 </Card>
             </SwiperSlide>
             <SwiperSlide className='swiper-slide-2'>
-            <Card css={{ mw: "100%", m:"2rem", h:"350px"}} color='white'>
+            <Card css={{ mw: "100%", m:"1.5rem", h:"320px"}} color='white'>
                         <Text h4 color="primary" weight={'bold'} css={{p:".5rem"}}>
                             Preparate para el reto
                         </Text>
@@ -77,7 +77,7 @@ function Descriptions(props) {
                 </Card>
             </SwiperSlide>
             <SwiperSlide className='swiper-slide-2'>
-            <Card css={{ mw: "100%", m:"2rem", h:"350px"}} color='white'>
+            <Card css={{ mw: "100%", m:"1.5rem", h:"320px"}} color='white'>
                         <Text h4 color="primary" weight={'bold'} css={{p:".5rem"}}>
                             Recompensas
                         </Text>
